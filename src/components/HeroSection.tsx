@@ -46,7 +46,7 @@ const HeroSection = () => {
         <div className="lg:w-1/2  justify-center mt-5 lg:mt-0 lg:justify-end ">
           <div className="relative">
             <img 
-              src="hero.png" 
+              src="https://i.ibb.co/BYr1y6j/hero.png" 
               alt="Digital Solutions Illustration" 
               className="max-w-full h-auto w-64 sm:w-80 md:w-96 lg:max-w-lg xl:max-w-3xl animate-float"
               style={{ maxHeight: '90vh' }}
