@@ -21,7 +21,7 @@ const HeroSection = () => {
             <img 
               src="https://i.ibb.co/ZRR1GSQx/logo1.png" 
               alt="PYDAH SOFT Logo" 
-              className="h-20 md:h-24 lg:h-52 transition-all duration-500 transform group-hover:scale-105" 
+              className="h-40 md:h-24 lg:h-52 transition-all duration-500 transform group-hover:scale-105" 
             />
             <div className="absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-pydah-primary to-pydah-accent w-0 group-hover:w-full transition-all duration-500"></div>
           </div>
