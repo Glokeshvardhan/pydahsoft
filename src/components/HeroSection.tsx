@@ -45,7 +45,7 @@ const HeroSection = () => {
         </div>
 
         {/* Left Content - Enhanced Alignment */}
-        <div className="lg:w-1/2 space-y-6 mb-8 lg:mb-0 animate-fade-in-up flex flex-col justify-center" style={{animationDelay: "0.2s"}}>
+        <div className="lg:w-1/2 space-x-6 mb-8 lg:mb-0 animate-fade-in-up flex flex-col justify-center" style={{animationDelay: "0.2s"}}>
           {/* Enhanced Text Hierarchy */}
           <div className="space-y-4">
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-pydah-dark leading-tight">
