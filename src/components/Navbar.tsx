@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
@@ -19,6 +18,18 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Prevent body scroll when menu is open
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isMenuOpen]);
+
   const navLinks = [
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
@@ -28,11 +39,14 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'py-2 bg-white/90 backdrop-blur-md shadow-md' : 'py-4 bg-transparent'}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'py-2 bg-white shadow-md' : 'py-4 bg-transparent'}`}>
       <div className="container mx-auto px-4 flex justify-between items-center">
         <a href="#home" className="flex items-center">
-          <span className="text-2xl font-montserrat font-bold text-pydah-primary">PYDAH</span>
-          <span className="text-2xl font-montserrat font-bold text-pydah-secondary">SOFT</span>
+          <img 
+            src="https://i.ibb.co/k27jpQJ6/pydahlogo.jpg" 
+            alt="PYDAH SOFT Logo" 
+            className="h-12 md:h-14 transition-all duration-300 hover:scale-105"
+          />
         </a>
 
         {/* Desktop Navigation */}
@@ -46,7 +60,6 @@ const Navbar = () => {
               {link.name}
             </a>
           ))}
-          
         </div>
 
         {/* Mobile Menu Button */}
@@ -60,22 +73,44 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Navigation */}
-      {isMenuOpen && (
-        <div className="md:hidden bg-white shadow-lg animate-fade-in">
-          <div className="container mx-auto py-4 px-4 flex flex-col space-y-4">
+      <div 
+        className={`fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform transition-transform duration-300 ease-in-out md:hidden ${
+          isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
+        style={{ zIndex: 1000 }}
+      >
+        <div className="flex flex-col h-full">
+          <div className="flex justify-end p-4">
+            <button 
+              className="text-pydah-dark" 
+              onClick={() => setIsMenuOpen(false)}
+              aria-label="Close menu"
+            >
+              <X size={24} />
+            </button>
+          </div>
+          <div className="flex-1 px-6 py-4 flex flex-col space-y-6 overflow-y-auto">
             {navLinks.map((link) => (
               <a 
                 key={link.name} 
                 href={link.href} 
-                className="font-medium text-pydah-dark-gray hover:text-pydah-primary transition-colors py-2"
+                className="font-medium text-pydah-dark-gray hover:text-pydah-primary transition-colors py-2 text-lg"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.name}
               </a>
             ))}
-            <button className="primary-btn self-start">Get Started</button>
           </div>
         </div>
+      </div>
+
+      {/* Overlay when menu is open */}
+      {isMenuOpen && (
+        <div 
+          className="fixed inset-0 bg-black/20 md:hidden"
+          style={{ zIndex: 999 }}
+          onClick={() => setIsMenuOpen(false)}
+        />
       )}
     </nav>
   );
