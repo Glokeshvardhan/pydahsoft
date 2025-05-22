@@ -69,7 +69,7 @@ const HeroSection = () => {
             height="40" 
             viewBox="0 0 24 24" 
             fill="none" 
-            xmlns="http://www.w3.org/2000/svg"
+            xmlns="https://i.ibb.co/WvC0xHVr/hero.png"
             className="text-pydah-primary hover:text-pydah-accent transition-colors"
           >
             <path 
