@@ -27,6 +27,23 @@ const HeroSection = () => {
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 rounded-full bg-pydah-primary/5 animate-float"></div>
       
       <div className="container mx-auto px-4 h-full flex flex-col lg:flex-row items-center justify-center lg:justify-between">
+
+
+
+ {/* Right Content - Enhanced Image Presentation */}
+        <div className="lg:w-1/2 flex justify-center mt-5 lg:mt-0 lg:justify-end">
+          <div className="relative">
+            <img 
+              src="https://i.ibb.co/WvC0xHVr/hero.png" 
+              alt="Digital Solutions Illustration" 
+              className="w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px] lg:max-w-[600px] h-auto animate-float"
+              style={{ maxHeight: '90vh' }}
+            />
+            {/* Subtle glow effect */}
+            <div className="absolute inset-0 bg-gradient-to-br from-pydah-primary/10 to-pydah-accent/10 rounded-full blur-xl -z-10"></div>
+          </div>
+        </div>
+
         {/* Left Content - Enhanced Alignment */}
         <div className="lg:w-1/2 space-y-6 mb-8 lg:mb-0 animate-fade-in-up flex flex-col justify-center" style={{animationDelay: "0.2s"}}>
           {/* Enhanced Text Hierarchy */}
@@ -44,20 +61,7 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Right Content - Enhanced Image Presentation */}
-        <div className="lg:w-1/2 flex justify-center mt-5 lg:mt-0 lg:justify-end">
-          <div className="relative">
-            <img 
-              src="https://i.ibb.co/WvC0xHVr/hero.png" 
-              alt="Digital Solutions Illustration" 
-              className="w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px] lg:max-w-[600px] h-auto animate-float"
-              style={{ maxHeight: '90vh' }}
-            />
-            {/* Subtle glow effect */}
-            <div className="absolute inset-0 bg-gradient-to-br from-pydah-primary/10 to-pydah-accent/10 rounded-full blur-xl -z-10"></div>
-          </div>
-        </div>
-
+       
         {/* Scroll Down Indicator - Enhanced */}
         <div 
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce flex flex-col items-center cursor-pointer"
