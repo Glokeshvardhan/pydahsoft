@@ -78,7 +78,7 @@ const SolutionsSection = () => {
         '2+ years of experience in Flutter development',
         'Strong knowledge of Dart programming',
         'Experience with state management solutions',
-        'Understanding of RESTful APIs and integration'
+        'Understanding of Restful APIs and integration'
       ],
       type: 'Full Time',
      
