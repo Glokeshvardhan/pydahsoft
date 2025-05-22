@@ -31,7 +31,7 @@ const HeroSection = () => {
 
 
  {/* Right Content - Enhanced Image Presentation */}
-        <div className="lg:w-1/2 flex justify-center mt-5 lg:mt-0 lg:justify-end">
+        <div className="lg:w-1/2 pr-5 flex justify-center mt-5 lg:mt-0 lg:justify-end">
           <div className="relative">
             <img 
               src="https://i.ibb.co/WvC0xHVr/hero.png" 
