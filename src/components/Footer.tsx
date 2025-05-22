@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Mail, Phone, MapPin } from 'lucide-react';
 
@@ -10,10 +9,11 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <a href="#home" className="inline-block mb-4">
-              <div className="flex items-center">
-                <span className="text-2xl font-montserrat font-bold text-white">PYDAH</span>
-                <span className="text-2xl font-montserrat font-bold text-pydah-secondary">SOFT</span>
-              </div>
+              <img 
+                src="https://i.ibb.co/dw75NxCj/pydahlogo.jpg" 
+                alt="PYDAH SOFT Logo" 
+                className="h-16  w-48 md:h-20 transition-all duration-300 hover:scale-105"
+              />
             </a>
             <p className="text-pydah-light/80 mb-6">
               Building future-ready digital solutions that drive innovation and business transformation.
@@ -61,11 +61,9 @@ const Footer = () => {
             <h3 className="text-xl font-montserrat font-bold mb-6">Contact Us</h3>
             <ul className="space-y-4">
               <li className="flex items-start">
-                <MapPin className="w-20 h-20 mt-1 mr-3 text-pydah-secondary" />
+                <MapPin className="w-5 h-5 mt-1 mr-3 text-pydah-secondary" />
                 <span className="text-pydah-light/80">    Kakinada - Yanam Road, Patavala, Tallarevu (M),
-
                   Kakinada District, Andhra Pradesh, India
-
                   Pincode 533461  </span>
               </li>
               <li className="flex items-center">
