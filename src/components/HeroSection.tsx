@@ -62,9 +62,9 @@ const HeroSection = () => {
         </div>
 
        
-        {/* Scroll Down Indicator - Enhanced */}
+        {/* Scroll Down Indicator - Hidden on mobile, visible on md and up */}
         <div 
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce flex flex-col items-center cursor-pointer"
+          className="hidden md:flex absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce flex-col items-center cursor-pointer"
           onClick={scrollToNextSection}
         >
           <p className="text-sm text-pydah-gray mb-2">Scroll Down</p>
@@ -73,7 +73,7 @@ const HeroSection = () => {
             height="40" 
             viewBox="0 0 24 24" 
             fill="none" 
-            xmlns="https://i.ibb.co/WvC0xHVr/hero.png"
+            xmlns="http://www.w3.org/2000/svg"
             className="text-pydah-primary hover:text-pydah-accent transition-colors"
           >
             <path 
