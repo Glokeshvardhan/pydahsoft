@@ -29,7 +29,6 @@ const AboutSection = () => {
         
         {/* Who We Are Section */}
         <div className="mb-20 mt-09">
-          <h3 className="heading-2 text-center   animate-fade-in-up  mb-12 gradient-text">WHO WE ARE</h3>
           
           <div className="grid md:grid-cols-3 gap-8">
             <div className="glass-card p-8 animate-scale-in" style={{animationDelay: "0.1s"}}>
