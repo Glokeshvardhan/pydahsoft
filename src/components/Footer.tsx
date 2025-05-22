@@ -8,12 +8,14 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <a href="#home" className="inline-block mb-4">
-              <img 
-                src="https://i.ibb.co/dw75NxCj/pydahlogo.jpg" 
-                alt="PYDAH SOFT Logo" 
-                className="h-16  w-48 md:h-20 transition-all duration-300 hover:scale-105"
-              />
+            <a href="#home" className="inline-block mb-6">
+              <div className="space-y-1">
+                <h2 className="text-3xl md:text-4xl font-bold">
+                  <span className="text-white">PYDAH</span>
+                  <span className="text-pydah-secondary">SOFT</span>
+                </h2>
+                <p className="text-pydah-accent text-sm md:text-base font-semibold tracking-wider">PRIVATE LIMITED</p>
+              </div>
             </a>
             <p className="text-pydah-light/80 mb-6">
               Building future-ready digital solutions that drive innovation and business transformation.
