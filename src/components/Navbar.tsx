@@ -45,7 +45,7 @@ const Navbar = () => {
           <img 
             src="https://i.ibb.co/5W3yQydc/pydahsoft-original-logo.png" 
             alt="PYDAH SOFT Logo" 
-            className="h-16  md:h-20 md:w-68 transition-all duration-300 hover:scale-100"
+            className="h-28 w-62 md:h-20 md:w-68 transition-all duration-300 hover:scale-100"
           />
         </a>
 
