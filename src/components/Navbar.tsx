@@ -43,9 +43,9 @@ const Navbar = () => {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <a href="#home" className="flex items-center">
           <img 
-            src="https://i.ibb.co/k27jpQJ6/pydahlogo.jpg" 
+            src="https://i.ibb.co/5W3yQydc/pydahsoft-original-logo.png" 
             alt="PYDAH SOFT Logo" 
-            className="h-12 md:h-14 transition-all duration-300 hover:scale-105"
+            className="h-15 w-48 md:h-14 transition-all duration-300 hover:scale-105"
           />
         </a>
 
