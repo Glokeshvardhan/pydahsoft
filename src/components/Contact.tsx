@@ -290,15 +290,13 @@ const Contact = () => {
                         className="bg-white p-3 sm:p-4 rounded-xl shadow-lg border border-gray-100 overflow-hidden"
                     >
                         <h4 className="text-lg font-semibold text-gray-800 mb-3 sm:mb-4">Find Us on Map</h4>
-                        <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1909.3741949231212!2d82.22429230724381!3d16.838833798360813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3820a3286aea3b%3A0x430e293212485462!2sPydah%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1747236217094!5m2!1sen!2sin"
-                                width="100%"
-                                height="250"
-                                style={{ border: 0 }}
-                                allowFullScreen=""
+                        <div className="relative w-full aspect-video">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1469.4400667086525!2d82.22545239305293!3d16.83853038058774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a38210020e0a827%3A0x133b8551c002305b!2sPydahSoft!5e0!3m2!1sen!2sin!4v1747978680533!5m2!1sen!2sin" 
+                                className="absolute top-0 left-0 w-full h-full rounded-lg border-0"
+                                allowFullScreen
                                 loading="lazy"
-                                className="rounded-lg"
+                                referrerPolicy="no-referrer-when-downgrade"
                             />
                         </div>
                     </motion.div>
