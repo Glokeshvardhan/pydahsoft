@@ -311,9 +311,9 @@ const Contact = () => {
                         <h4 className="text-lg font-semibold text-gray-800 mb-3 sm:mb-4">Connect With Us</h4>
                         <div className="flex justify-center space-x-4 sm:space-x-6">
                             {[
-                                { icon: faLinkedinIn, color: "bg-blue-600", url: "https://www.linkedin.com/company/pydahsoft" },
+                                { icon: faLinkedinIn, color: "bg-blue-600", url: "www.linkedin.com/in/pydah-soft-5b1469367" },
                                 { icon: faFacebookF, color: "bg-blue-700", url: "https://facebook.com/pydahsoft" },
-                                { icon: faInstagram, color: "bg-pink-600", url: "https://instagram.com/pydahsoft" },
+                                { icon: faInstagram, color: "bg-pink-600", url: "https://www.instagram.com/pydahsoft25/?next=%2F&hl=en" },
                             ].map((social, index) => (
                                 <motion.a
                                     key={index}
