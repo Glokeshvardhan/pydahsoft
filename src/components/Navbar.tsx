@@ -37,6 +37,11 @@ const Navbar = () => {
     setIsMenuOpen(false);
   };
 
+  const handleBlogClick = () => {
+    navigate('/blog');
+    setIsMenuOpen(false);
+  };
+
   const handleHashClick = (hash) => {
     // First navigate to home if we're not there
     if (window.location.pathname !== '/') {
@@ -81,6 +86,12 @@ const Navbar = () => {
               {link.name}
             </button>
           ))}
+          <button 
+            onClick={handleBlogClick}
+            className="font-medium text-pydah-dark-gray hover:text-pydah-primary transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-pydah-primary after:transition-all hover:after:w-full"
+          >
+            Blog
+          </button>
           <button 
             onClick={handleVacanciesClick}
             className="font-medium to-pydah-accent text-black px-2 py-2 rounded-lg hover:opacity-90 transition-opacity"
@@ -130,6 +141,12 @@ const Navbar = () => {
                 {link.name}
               </button>
             ))}
+            <button 
+              onClick={handleBlogClick}
+              className="font-medium text-pydah-dark-gray hover:text-pydah-primary transition-colors py-2 text-lg text-left"
+            >
+              Blog
+            </button>
             <button 
               onClick={handleVacanciesClick}
               className="font-medium pr-32 to-pydah-accent text-black rounded-lg hover:opacity-90 transition-opacity text-center"
