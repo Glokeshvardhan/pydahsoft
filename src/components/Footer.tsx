@@ -43,6 +43,7 @@ const Footer = () => {
               <li><a href="#services" className="text-pydah-light/80 hover:text-pydah-secondary transition-colors">Services</a></li>
               <li><a href="#solutions" className="text-pydah-light/80 hover:text-pydah-secondary transition-colors">Solutions</a></li>
               <li><a href="#contact" className="text-pydah-light/80 hover:text-pydah-secondary transition-colors">Contact</a></li>
+              <li><a href="/software-products" className="text-pydah-light/80 hover:text-pydah-secondary transition-colors">Buy Our Products</a></li>
             </ul>
           </div>
 
