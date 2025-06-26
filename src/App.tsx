@@ -11,6 +11,7 @@ import Contact from "./components/Contact";
 import Vacancies from "./components/vacancies";
 import Navbar from './components/Navbar';
 import WhatsAppChat from './components/WhatsAppChat';
+import SoftwareProducts from "./pages/SoftwareProducts";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +29,7 @@ const App = () => (
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/web-development" element={<WebDevelopment />} />
+            <Route path="/software-products" element={<SoftwareProducts />} />
             <Route path="/#:section" element={<Navigate to="/" />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
