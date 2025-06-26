@@ -6,49 +6,49 @@ const SoftwareProducts = () => {
       id: 1,
       name: 'Web Development',
       description: 'Complete website development including responsive design and modern UI/UX principles.',
-      price: 'Rs.12,000'
+      price: '$499'
     },
     {
       id: 2,
       name: 'Full Stack Development',
       description: 'End-to-end development with frontend and backend solutions for your business needs.',
-      price: 'Rs.15,000'
+      price: '$999'
     },
     {
       id: 3,
       name: 'Node.js Backend',
       description: 'Robust server-side solutions built with Node.js for high performance applications.',
-      price: 'Rs.10,000'
+      price: '$699'
     },
     {
       id: 4,
       name: 'React Frontend',
       description: 'Interactive and dynamic user interfaces built with React library.',
-      price: 'Rs.11,000'
+      price: '$599'
     },
     {
       id: 5,
       name: 'Vite + React Setup',
       description: 'Blazing fast frontend tooling with Vite and React for optimal developer experience.',
-      price: 'Rs.12,000'
+      price: '$399'
     },
     {
       id: 6,
       name: 'Express.js API',
       description: 'RESTful API development with Express.js framework for your backend needs.',
-      price: 'Rs.10,000'
+      price: '$549'
     },
     {
       id: 7,
       name: 'MongoDB Integration',
       description: 'NoSQL database solutions with MongoDB for flexible data storage.',
-      price: 'Rs.11,000'
+      price: '$449'
     },
     {
       id: 8,
       name: 'Tailwind CSS Styling',
       description: 'Modern utility-first CSS framework implementation for beautiful designs.',
-      price: 'Rs.10,000'
+      price: '$349'
     }
   ];
 
